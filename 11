@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <HEAD>
+        <TITLE>{{ title }}</TITLE>
+    </HEAD>
+    <BODY>
+        <H1>{{ header_title }}</H1>
+        <UL>
+    {% for item in State %}
+        <LI>{{ item.id }}: <B>{{ item.name }}</B></LI>
+    {% endfor %}
+    </UL>
+    </BODY>
+</HTML>
